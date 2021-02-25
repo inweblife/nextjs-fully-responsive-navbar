@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+
+  --text-primary-color: #333;
+  --text-secondary-color: #eee;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+html,
+body {
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
