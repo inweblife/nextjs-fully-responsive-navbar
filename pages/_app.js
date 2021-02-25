@@ -1,5 +1,25 @@
+import "../assets/main.css";
+
+import React from "react";
+import PropTypes from "prop-types";
+
+import Head from "../components/Head";
+import Layout from "../components/Layout";
+
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }
 
-export default MyApp
+MyApp.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object,
+};
+
+export default MyApp;
